@@ -1,0 +1,21 @@
+class Program
+    {
+       static void imprimeComHifen(string str)
+        {
+          
+            for ( int i =0; i < str.Length; i++)
+            {
+                if (str[i] >= 'a' && str[i] <= 'z' && i != str.Length - 1 || str[i] >= 'A' && str[i] <= 'Z' && i != str.Length - 1)
+                    Console.Write("{0}-", str[i]);
+
+                if (str[i] >= 'a' && str[i] <= 'z' && i == str.Length -1 || str[i] >= 'A' && str[i] <= 'Z' && i == str.Length -1)
+                    Console.Write("{0}", str[i]);
+            }
+
+        }
+        static void Main(string[] args)
+        {
+            string str = "Sistemas";
+
+            imprimeComHifen(str);
+        }
