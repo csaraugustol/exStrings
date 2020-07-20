@@ -1,0 +1,23 @@
+class Program
+    {
+       static int retornaVogais(string str)
+        {
+            int contVogal = 0;
+
+            for ( int i =0; i < str.Length; i++)
+            {
+                if (str[i] == 'a' || str[i] == 'e' || str[i] == 'i' || str[i] == 'o' || str[i] == 'u' ||
+                    str[i] == 'A' || str[i] == 'E' || str[i] == 'I' || str[i] == 'O' || str[i] == 'U')
+                    contVogal++;
+
+            }
+
+            return contVogal;
+        }
+        static void Main(string[] args)
+        {
+            string str = "Brasil vs Argentina";
+
+            Console.Write("A frase possui {0} vogal(is).", retornaVogais(str));
+        }
+    }
