@@ -1,0 +1,28 @@
+class Program
+    {
+       static void imprimeDados(string str)
+        {
+            int contVogal = 0, contCons = 0, contOutros = 0;
+
+            for ( int i =0; i < str.Length; i++)
+            {
+                if (str[i] == 'a' || str[i] == 'e' || str[i] == 'i' || str[i] == 'o' || str[i] == 'u' ||
+                    str[i] == 'A' || str[i] == 'E' || str[i] == 'I' || str[i] == 'O' || str[i] == 'U')
+                    contVogal++;
+
+                else if (str[i] != contVogal && str[i] != ' ')
+                    contCons++;
+
+                else
+                    contOutros++;
+            }
+
+            Console.Write("Consoantes: {0}\nVogais: {1}\nOutros: {2}", contCons, contVogal, contOutros);
+        }
+        static void Main(string[] args)
+        {
+            string str = "Curso de ADS";
+
+            imprimeDados(str);
+        }
+    }
