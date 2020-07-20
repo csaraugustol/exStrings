@@ -1,0 +1,16 @@
+class Program
+    {
+        static void Main(string[] args)
+        {
+			string str = "Cruzeiro Esporte Clube";
+			int contEspaco = 0;
+
+			for (int i = 0; i < str.Length; i++)
+			{
+				if (str[i] == ' ')
+					contEspaco++;
+			}
+
+			Console.Write("Número de espaços: {0}.", contEspaco);
+		}
+    }
